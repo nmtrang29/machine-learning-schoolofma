@@ -93,7 +93,7 @@ Note: If connection is lost, the training can still be resumed as "checkout" is 
 ---
 
 ## List of tools
-#### Deep learning tools
+### 1. Deep learning tools
 **Neural-style** image-to-image (transfer style)
 
 [**Fast-style-transfer**](https://github.com/genekogan/fast-style-transfer) image-to-image
@@ -120,7 +120,7 @@ Note: If connection is lost, the training can still be resumed as "checkout" is 
 
 **Wavenet / SampleRNN** make sounds (need to train your own)
 
-#### Interactive ML tools
+### 2. Interactive ML tools
 Ml5 real-time image classifier
 
 Ml5 real-time image slider (regression)
@@ -129,7 +129,7 @@ Ml5 PoseNet
 
 Sensors(Kinect/Leap/Arduino/etc)/Processing/Max/oF/etc <- Wekinator -> Processing/Max/oF/etc
 
-#### DataViz ML tools
+### 3. DataViz ML tools
 Image t-SNE + reverse image search
 
 Audio t-SNE
