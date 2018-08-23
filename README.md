@@ -90,13 +90,49 @@ python main.py --dataset images --data_dir ../_art-DCGAN/datasets/concretism_new
 
 Note: If connection is lost, the training can still be resumed as "checkout" is saved frequently during the training process. Just execute the same command again.
 
+---
 
+## List of tools
+#### Deep learning tools
+**Neural-style** image-to-image (transfer style)
 
+[**Fast-style-transfer**](https://github.com/genekogan/fast-style-transfer) image-to-image
 
+**Pix2pix** image-to-image (anything)
 
+**Char-rnn** generate text in style (from prime)
 
+[**Detectron**](https://github.com/facebookresearch/Detectron) image-to-segments
 
-Pix2pix
-Neural style transfer
-Char-rnn + text bots
-GANs
+[**AttnGAN**](https://github.com/taoxugit/AttnGAN/) text-to-image
+
+**Im2txt** image-to-text
+
+**Densecap** image-to-text (captions)
+
+**Yolo** image-to-text (objects)
+
+**PoseNet/Densepose** image-to-person
+
+**DeepSpeech** speech-to-text
+
+**Doc2vec** paragraph-to-vector 
+
+**Wavenet / SampleRNN** make sounds (need to train your own)
+
+#### Interactive ML tools
+Ml5 real-time image classifier
+
+Ml5 real-time image slider (regression)
+
+Ml5 PoseNet
+
+Sensors(Kinect/Leap/Arduino/etc)/Processing/Max/oF/etc <- Wekinator -> Processing/Max/oF/etc
+
+#### DataViz ML tools
+Image t-SNE + reverse image search
+
+Audio t-SNE
+
+Text t-SNE
+
