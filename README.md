@@ -48,7 +48,7 @@ Wekinator (middle-man), Processing, Ofx, ml5js
 1. Create new machine ML-in-a-box template (Ubuntu 16.04 / 17.04), P4000, public IP address
 2. Go into terminal of your Paperspace computer (password is sent to your email)
 3. To change password `sudo passwd paperspace`
-4. To launch `jupyter lab - no-browser` 
+4. To launch `jupyter lab --no-browser` 
 5. In your local terminal `ssh -NL 8157:localhost:8888 paperspace@PAPERSPACE_COMPUTER_IP_ADDRESS`
 
 _If it doesn't connect, try changing 8888 to 8889 or switching to another wifi network_
