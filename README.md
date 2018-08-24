@@ -126,3 +126,4 @@ Note: If connection is lost, the training can still be resumed as "checkout" is 
 - [Prosthetic Knowledge](http://prostheticknowledge.tumblr.com/)
 - [OpenFace](https://cmusatyalab.github.io/openface/)
 - [TextCleaner](https://pypi.org/project/text_cleaner/)
+- [RemoveNonAsciiChars[(https://github.com/Gabriel-p/RemoveNonAsciiChars)
