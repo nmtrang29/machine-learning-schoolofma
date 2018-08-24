@@ -60,7 +60,7 @@ So the training process can run without having Jupyter or Terminal open. Papersp
 1. Create a text file containing that command you want to run, rename that file to `run.sh`
 2. Go to the folder containing that file then run the following `nohup sh run.sh > log.txt &`
 3. The process will begin running, and it will continuously log its output to the file `log.txt`. You can come back to that folder and check on it later.
-4. To force kill a process, go to Home, check `nvidia-smi` then `kill XXXX`
+4. To force kill a process, go to Home, check `nvidia-smi`, find the process ID then `kill PROCESS_ID`
 
 ### DCGan
 #### Prepare dataset
@@ -136,3 +136,11 @@ Audio t-SNE
 
 Text t-SNE
 
+### 4. Others
+
+[Openface](https://github.com/cmusatyalab/openface) (Face recognition: Detect/cut/crop/cluster or classify)
+[Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) (Keres implementation of GANs)
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (Python library for scraping)
+[Prosthetic Knowledge](http://prostheticknowledge.tumblr.com/)
+[OpenFace](https://cmusatyalab.github.io/openface/)
+[TextCleaner](https://pypi.org/project/text_cleaner/)
