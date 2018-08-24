@@ -94,53 +94,35 @@ Note: If connection is lost, the training can still be resumed as "checkout" is 
 
 ## List of tools
 ### 1. Deep learning tools
-**Neural-style** image-to-image (transfer style)
-
-[**Fast-style-transfer**](https://github.com/genekogan/fast-style-transfer) image-to-image
-
-**Pix2pix** image-to-image (anything)
-
-**Char-rnn** generate text in style (from prime)
-
-[**Detectron**](https://github.com/facebookresearch/Detectron) image-to-segments
-
-[**AttnGAN**](https://github.com/taoxugit/AttnGAN/) text-to-image
-
-**Im2txt** image-to-text
-
-**Densecap** image-to-text (captions)
-
-**Yolo** image-to-text (objects)
-
-**PoseNet/Densepose** image-to-person
-
-**DeepSpeech** speech-to-text
-
-**Doc2vec** paragraph-to-vector 
-
-**Wavenet / SampleRNN** make sounds (need to train your own)
+- **Neural-style** image-to-image (transfer style)
+- [**Fast-style-transfer**](https://github.com/genekogan/fast-style-transfer) image-to-image
+- **Pix2pix** image-to-image (anything)
+- **Char-rnn** generate text in style (from prime)
+- [**Detectron**](https://github.com/facebookresearch/Detectron) image-to-segments
+- [**AttnGAN**](https://github.com/taoxugit/AttnGAN/) text-to-image
+- **Im2txt** image-to-text
+- **Densecap** image-to-text (captions)
+- **Yolo** image-to-text (objects)
+- **PoseNet/Densepose** image-to-person
+- **DeepSpeech** speech-to-text
+- **Doc2vec** paragraph-to-vector 
+- **Wavenet / SampleRNN** make sounds (need to train your own)
 
 ### 2. Interactive ML tools
-Ml5 real-time image classifier
-
-Ml5 real-time image slider (regression)
-
-Ml5 PoseNet
-
-Sensors(Kinect/Leap/Arduino/etc)/Processing/Max/oF/etc <- Wekinator -> Processing/Max/oF/etc
+- Ml5 real-time image classifier
+- Ml5 real-time image slider (regression)
+- Ml5 PoseNet
+- Sensors(Kinect/Leap/Arduino/etc)/Processing/Max/oF/etc <- Wekinator -> Processing/Max/oF/etc
 
 ### 3. DataViz ML tools
-Image t-SNE + reverse image search
-
-Audio t-SNE
-
-Text t-SNE
+- Image t-SNE + reverse image search
+- Audio t-SNE
+- Text t-SNE
 
 ### 4. Others
-
-[Openface](https://github.com/cmusatyalab/openface) (Face recognition: Detect/cut/crop/cluster or classify)
-[Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) (Keres implementation of GANs)
-[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (Python library for scraping)
-[Prosthetic Knowledge](http://prostheticknowledge.tumblr.com/)
-[OpenFace](https://cmusatyalab.github.io/openface/)
-[TextCleaner](https://pypi.org/project/text_cleaner/)
+- [Openface](https://github.com/cmusatyalab/openface) (Face recognition: Detect/cut/crop/cluster or classify)
+- [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) (Keres implementation of GANs)
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (Python library for scraping)
+- [Prosthetic Knowledge](http://prostheticknowledge.tumblr.com/)
+- [OpenFace](https://cmusatyalab.github.io/openface/)
+- [TextCleaner](https://pypi.org/project/text_cleaner/)
