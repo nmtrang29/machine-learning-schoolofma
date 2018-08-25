@@ -2,22 +2,22 @@
 My documentation for the [Autonomous Generative Spirit](http://schoolofma.org/autonomous-generative-spirit/), 4-week intensive course at School of Machines focusing on creative applications of Machine Learning. 
 ---
 
-# Week 1: Supervised ML using real-time interactive tools 
+## Week 1: Supervised ML using real-time interactive tools 
 
-## Types of supervised ML that we discussed
+### Types of supervised ML that we discussed
 Classification, Regression and Dynamic Time Wrapping
 
-## Tools
+### Tools
 Wekinator (middle-man), Processing, Ofx, ml5js
 
-## General Outline
+### General Outline
 - Introduction to Machine Learning + projects from Andreas and Gene
 - Sending and receiving OSC messages via Wekinator using Processing and Openframeworks 
 - Make something into Wekinator input/output
 - Controlling Wekinator via OSC
 - Wekinator with other softwares (Ableton, Touch Designer, Unity…)
 
-## What I made 
+### What I made 
 ##### 1. Study with me:
 - Tools: Processing (video-100-inputs) > Wekinator > Processing
 - What: Play video of someone studying and nag my sister everytime she gets distracted/looks away from her notebooks
@@ -44,7 +44,7 @@ Wekinator (middle-man), Processing, Ofx, ml5js
 - Aaron has a list of intersting links on Github, lots of cool art-tech projects
 ---
 
-# Week 2+3: Generative models and generative art
+## Week 2+3: Generative models and generative art
 ## Paperspace workflow
 1. Create new machine ML-in-a-box template (Ubuntu 16.04 / 17.04), P4000, public IP address
 2. Go into terminal of your Paperspace computer (password is sent to your email)
@@ -56,13 +56,14 @@ _If it doesn't connect, try changing 8888 to 8889 or switching to another wifi n
 
 6. Then go to your browser `https://localhost:8157`, and copy and paste the token given to you in the Paperspace terminal 
 
-### How to background a process
+## How to background a process
 So the training process can run without having Jupyter or Terminal open. Paperspace computer still has to be on.
 1. Create a text file containing that command you want to run, rename that file to `run.sh`
 2. Go to the folder containing that file then run the following `nohup sh run.sh > log.txt &`
 3. The process will begin running, and it will continuously log its output to the file `log.txt`. You can come back to that folder and check on it later.
 4. To force kill a process, go to Home, check `nvidia-smi`, find the process ID then `kill PROCESS_ID`
 
+---
 ## DCGan
 #### Prepare dataset
 Find ways to scrape lots of images, ideally anything from 1k to 10k+
@@ -95,7 +96,9 @@ python main.py --dataset images --data_dir FOLDER_CONTAIN_IMAGES_FOLDER --input_
 ```
 Note: If connection is lost, the training can still be resumed as "checkout" is saved frequently during the training process. Just execute the same command again.
 
-### Char-rnn
+---
+
+## Char-rnn
 #### Prepare dataset
 Gather as much input data as you can for training. The more the better. Prepare `input.txt` file containing all your training data. Minimum 1MB to 25MB+
 
@@ -138,6 +141,8 @@ Once the model is ready, point to it in your ml5 sketch:
 ```
 const lstm = new ml5.LSTMGenerator('./models/your_new_model');
 ```
+
+---
 
 ## What I made 
 ##### DCGan Ukiyo-e
