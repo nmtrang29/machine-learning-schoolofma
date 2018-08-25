@@ -79,17 +79,60 @@ python dataset_utils.py --input_dir ../data/op-art --output_dir ../data/op-art_1
 
 Note: For some reasons all images have to be in the folder `images` inside `op-art_128`. Do so using this command `mv *.jpg images/`
 
-#### Train model 
+#### Download the repository
 ```
 git clone https://github.com/carpedm20/DCGAN-tensorflow
-python main.py --dataset images --data_dir ../_art-DCGAN/datasets/concretism_new_128/ --input_height 128 --output_height 128 --epoch 1000 --train
 ```
-#### Test model 
+#### Train
 ```
-python main.py --dataset images --data_dir ../_art-DCGAN/datasets/concretism_new_128/ --input_height 128 --output_height 128
+python main.py --dataset images --data_dir FOLDER_CONTAIN_IMAGES_FOLDER --input_height 128 --output_height 128 --epoch 1000 --train
+```
+Warning: If your dataset is small (e.g. 2000 images), it will try to overfit, resulting in the output images looking similar to each other. I trained 1700 Ukiyo-e from Wikiart with 2000 epoch, things looked best at 500th epoch and just got worse from there!
+#### Test
+```
+python main.py --dataset images --data_dir FOLDER_CONTAIN_IMAGES_FOLDER --input_height 128 --output_height 128
+```
+Note: If connection is lost, the training can still be resumed as "checkout" is saved frequently during the training process. Just execute the same command again.
+
+### Char-rnn
+#### Prepare dataset
+Gather as much input data as you can for training. The more the better. Prepare `input.txt` file containing all your training data. Minimum 1MB to 25MB+
+
+
+#### Download the repository
+```
+git clone https://github.com/ml5js/training-lstm.git
+cd training-lstm
+```
+Note: I've trained both on my computer following the [Ml5 LSTM](https://ml5js.org/docs/training-lstm) training instrucstion and on Paperspace computer using [Sherjil Ozair's version of char-rnn code](https://github.com/sherjilozair/char-rnn-tensorflow).
+
+#### Train 
+Create a new folder in the root of this project and inside that folder you should have one file called `input.txt`. 
+
+A quick tip to concatenate many small disparate `.txt` files into one large training file `ls *.txt | xargs -L 1 cat >> input.txt`
+
+Start training using the following command
+```
+python train.py --data_dir=./FOLDER_CONTAINS__INPUTTXT
 ```
 
-Note: If connection is lost, the training can still be resumed as "checkout" is saved frequently during the training process. Just execute the same command again.
+This are the hyperparameters you can change to fit your data. [More info here](https://ml5js.org/docs/training-lstm)
+```
+python train.py --data_dir=./bronte \
+--rnn_size 128 \
+--num_layers 2 \
+--seq_length 50 \
+--batch_size 50 \
+--num_epochs 50 \
+--save_checkpoints ./checkpoints \
+--save_model ./models
+```
+
+#### Run
+Once the model is ready, point to it in your ml5 sketch:
+```
+const lstm = new ml5.LSTMGenerator('./models/your_new_model');
+```
 
 ---
 
@@ -127,5 +170,5 @@ Note: If connection is lost, the training can still be resumed as "checkout" is 
 - [Prosthetic Knowledge](http://prostheticknowledge.tumblr.com/)
 - [OpenFace](https://cmusatyalab.github.io/openface/)
 - [TextCleaner](https://pypi.org/project/text_cleaner/)
-- [RemoveNonAsciiChars[(https://github.com/Gabriel-p/RemoveNonAsciiChars)
+- [RemoveNonAsciiChars](https://github.com/Gabriel-p/RemoveNonAsciiChars)
 
