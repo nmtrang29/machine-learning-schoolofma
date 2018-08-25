@@ -1,6 +1,4 @@
 # Autonomous Generative Spirit Summary
-My documentation for the [Autonomous Generative Spirit](http://schoolofma.org/autonomous-generative-spirit/), 4-week intensive course at School of Machines focusing on creative applications of Machine Learning. 
----
 
 ## Week 1: Supervised ML using real-time interactive tools 
 
@@ -63,7 +61,6 @@ So the training process can run without having Jupyter or Terminal open. Papersp
 3. The process will begin running, and it will continuously log its output to the file `log.txt`. You can come back to that folder and check on it later.
 4. To force kill a process, go to Home, check `nvidia-smi`, find the process ID then `kill PROCESS_ID`
 
----
 ## DCGan
 #### Prepare dataset
 Find ways to scrape lots of images, ideally anything from 1k to 10k+
@@ -95,8 +92,6 @@ Warning: If your dataset is small (e.g. 2000 images), it will try to overfit, re
 python main.py --dataset images --data_dir FOLDER_CONTAIN_IMAGES_FOLDER --input_height 128 --output_height 128
 ```
 Note: If connection is lost, the training can still be resumed as "checkout" is saved frequently during the training process. Just execute the same command again.
-
----
 
 ## Char-rnn
 #### Prepare dataset
@@ -142,14 +137,22 @@ Once the model is ready, point to it in your ml5 sketch:
 const lstm = new ml5.LSTMGenerator('./models/your_new_model');
 ```
 
----
-
-## What I made 
+### What I made 
 ##### DCGan Ukiyo-e
 - Description
 ##### DCGan Concrete Art
 - Description
-##### DCGan Ukiyo-e
+##### Pix2pix Rachel
+- Description
+##### Pix2pix Kevin Hart
+- Description
+##### Char-rnn Southpark Script
+- Description
+##### Char-rnn Makeup Reviews
+- Description
+##### Image t-SNE People with my name
+- Description
+##### Audio t-SNE Environmetal sounds
 - Description
 
 ---
