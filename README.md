@@ -66,6 +66,7 @@ So the training process can run without having Jupyter or Terminal open. Papersp
 #### Prepare dataset
 Find ways to scrape lots of images, ideally anything from 1k to 10k+
 - [List of large datasets of images shared by Gene](https://docs.google.com/spreadsheets/d/1VijZSkQbqOvsvYBXdCx9UGu5zHGZPPpzwH2uHS-2XxQ/edit#gid=0)
+- [Kaggle](https://www.kaggle.com/) (tons of free large datasets)
 - [Tool to scrape Bing Images](https://github.com/montoyamoraga/edu13-scraping-bing-images). Hats off to Aaron!
 - [Tool to scrape Google Images](https://github.com/montoyamoraga/edu13-scraping-bing-images). Works well for 500~1k. 
 - [Tool to scrape Wikiart, can scrape by art genres or styles](https://github.com/ml4a/ml4a-guides/tree/experimental/utils)
@@ -127,3 +128,4 @@ Note: If connection is lost, the training can still be resumed as "checkout" is 
 - [OpenFace](https://cmusatyalab.github.io/openface/)
 - [TextCleaner](https://pypi.org/project/text_cleaner/)
 - [RemoveNonAsciiChars[(https://github.com/Gabriel-p/RemoveNonAsciiChars)
+
