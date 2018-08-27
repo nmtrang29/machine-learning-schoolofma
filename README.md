@@ -137,24 +137,48 @@ Once the model is ready, point to it in your ml5 sketch:
 const lstm = new ml5.LSTMGenerator('./models/your_new_model');
 ```
 
-### What I made 
-##### DCGan Ukiyo-e
-- Description
-##### DCGan Concrete Art
-- Description
-##### Pix2pix Rachel
-- Description
-##### Pix2pix Kevin Hart
-- Description
-##### Char-rnn Southpark Script
-- Description
-##### Char-rnn Makeup Reviews
-- Description
-##### Image t-SNE People with my name
-- Description
-##### Audio t-SNE Environmetal sounds
-- Description
+## Densecap
+#### Installation
+Follow the instruction [here](https://github.com/jcjohnson/densecap) to install Torch and dependencies
+```
+luarocks install torch
+luarocks install nn
+luarocks install image
+luarocks install lua-cjson
+luarocks install https://raw.githubusercontent.com/genekogan/stnbhwd/master/stnbhwd-scm-1.rockspec
+luarocks install https://raw.githubusercontent.com/jcjohnson/torch-rnn/master/torch-rnn-scm-1.rockspec
+luarocks install cutorch
+luarocks install cunn
+luarocks install cudnn (!DON'T USE THIS, INSTALL CUDNN FROM THE GENE'S FIX.SH BELOW)
+luarocks install cudnn
+```
 
+Note: Install cudnn from [here](https://gist.github.com/genekogan/5569833564ab21460b2af25357771796)
+
+### Download pretrained model 
+```
+sh scripts/download_pretrained_model.sh
+```
+Troubleshooting: Open `download_pretrained_model.sh` and place ... after wget
+
+### Run new images
+Put images in a folder inside `imgs` folder
+
+```
+th run_model.lua -input_dir imgs/FOLDER_NAME
+```
+This command will write results into the folder `vis/data`. Download `vis` folder and start a local HTTP server to see the reuslts.
+
+## What I made
+- DCGan: Ukiyo-e
+- DCGan: Concretism
+- Pix2pix: Rachel
+- Pix2pix: Kevin Hart
+- Char-rnn: Southpark script
+- Char-rnn: Makeup reviews
+- Image t-SNE: People with my name
+- Audio t-SNE: Environmetal sounds
+- Densecap: Police officers posing with cannabis plants images
 ---
 
 ## List of tools
