@@ -167,7 +167,7 @@ Put images in a folder inside `imgs` folder
 ```
 th run_model.lua -input_dir imgs/FOLDER_NAME
 ```
-This command will write results into the folder `vis/data`. Download `vis` folder and start a local HTTP server to see the reuslts.
+This command will write results into the folder `vis/data`. Download `vis` folder and start a local HTTP server `python -m http.server` to see the results.
 
 ## What I made
 - DCGan: Ukiyo-e
