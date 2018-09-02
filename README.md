@@ -172,13 +172,16 @@ This command will write results into the folder `vis/data`. Download `vis` folde
 ## What I made
 - DCGan: Ukiyo-e
 - DCGan: Concretism
-- Pix2pix: Rachel
+- Pix2pix: Rachel Uwa
 - Pix2pix: Kevin Hart
 - Char-rnn: Southpark script
-- Char-rnn: Makeup reviews
+- Char-rnn: Beauy product reviews
 - Image t-SNE: People with my name
 - Audio t-SNE: Environmetal sounds
-- Densecap: Police officers posing with cannabis plants images
+- Densecap: Police officers posing with cannabis plants
+- Pose2pose: 70s fashion shopping
+- Pose2pose: The Sims character walking
+- Pose2pose: Björk
 ---
 
 ## List of tools
