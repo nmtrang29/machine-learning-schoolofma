@@ -1,3 +1,5 @@
+# //////////////WORK IN PROGRESS
+
 # Autonomous Generative Spirit Summary
 
 ## Week 1: Supervised ML using real-time interactive tools 
